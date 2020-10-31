@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff !important
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+
+}
+
+i {
+    color: #2fccd0;
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    z-index: -3;
+    /*background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);*/
+    background: #1c84c6;
+}
+
+.nav-item a {
+    color: #fff;
+     !important;
+    font-weight: bold;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+}
+
+.header-button a {
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.header-button a:hover {
+    color: #000;
+    background: yellow;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    border: 1px solid yellow !important;
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+
+
+/* footer start*/
+.footersection {
+    width: 100%;
+    height: auto;
+    padding: 70px 0px 20px 0;
+    background: #101820ff !important;
+    position: relative;
+}
+
+.footersection p {
+    color: #fff;
+}
+
+.footersection li a {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.footersection h3 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.6rem !important;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+}
+
+#myBtn {
+    /*display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background: #606060;
+}
+
+
+/* media  */
+
+@media(max-width: 768px) {
+    .header-extradiv {
+        height: 100vh;
+        position: absolute;
+        width: auto;
+    }
+
+    .progress-wrap {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .nav-item {
+        text-align: center !important;
+    }
+
+    .price,
+    .happyclients,
+    .contactus {
+        height: auto !important;
+        margin-top: 50px;
+    }
+
+    .card-second {
+        transform: translateY(0px);
+        margin: 30px 0px;
+    }
+
+    .header-button a:hover {
+        color: #50d1c0;
+        background: #fff;
+        text-decoration: none;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        font-weight: 400;
+    }
+
+    .footer-div:nth-child(2) {
+        text-align: left !important;
+    }
+
+    .footer-div:nth-child(3) {
+        text-align: left !important;
+    }
+
+    .header-extradiv {
+        height: 100vh;
+        position: relative;
+        width: auto;
+    }
+
+}
+
+footer .personal-links ul li:before {
+    content: '\e907';
+    color: #f6b800;
+    font-size: 15px;
+    font-family: icomoon;
+    vertical-align: middle;
+    margin-top: -1px;
+    position: absolute;
+    left: 0;
+}
+
+/* footer end */
+

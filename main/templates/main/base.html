@@ -1,0 +1,142 @@
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Alumech cop., Developer,Designer: sameer shaikh, Copywriter:sameer shaikh" />
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css"></i>
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+    
+</head>
+<div class="header" id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container text-uppercase">
+            <a class="navbar-brand font-weight-bold text-white " href="#">Alumech</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'about' %}">about</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'service' %}">service</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'project' %}">Project</a>
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'product' %}">product</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'photo' %}">Photos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'contact' %}">contact</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+</div>
+
+</div>
+
+{% block content %}
+{% endblock %}
+<!-- footer start -->
+<footer class="footersection" id="footerdiv">
+    <div class="container " style="width :auto;">
+        <div class="row">
+            <div class="col-lg-3 col-12 col-md-6 footer-div">
+                <div style="line-height: 1.9rem">
+                    <h3>ALUMECH</h3>
+                    <p>A combination of experience in design, project management and knowledge of aluminium system and engineering makes Alumech a reliable source of glass and aluminium for architectural works and experience. </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6 footer-div text-center">
+                <div style="line-height: 1.9rem">
+                    <h3>Links</h3>
+                    <li><a href=""><span class="fi fi-angle-right">HOME</a></li>
+                    <li><a href=""><span class="fi fi-angle-right">SERVISEC</a></li>
+                    <li><a href=""><span class="fi fi-angle-right">PRICE</a></li>
+                    <li><a href=""><span class="fi fi-angle-right">ABOUT</a></li>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6 footer-div text-center">
+                <div style="line-height: 1.9rem">
+                    <h3>service</h3>
+                    <li><a href=""><span class="fi fi-angle-right">HOME</a></li>
+                    <li><a href=""><span class="fi fi-angle-right">SERVISEC</a></li>
+                    <li><a href=""><span class="fi fi-angle-right">PRICE</a></li>
+                    <li><a href=""><span class="fi fi-angle-right">ABOUT</a></li>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6 footer-div text-left ">
+                <div style="line-height: 1.9rem">
+                    <h3>Have a Questions?</h3>
+                    <li><a href="#"><span class="fa fa-map">Sr-No 21/1/1 Pancharatna ,Niranjan society,Katraj, Pune</span></a></li>
+                    <li><a href="#"><span class="fa fa-phone">+91 7559138972</span></a></li>
+                    <li><a href="#"><span class="fa fa-envelope">info@alumech.in</span></a></li>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p style="padding-top: 10px;">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>
+                    document.write(new Date().getFullYear());
+                    </script> All rights reserved by Alumech</p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+        <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+        </div>
+    </div>
+
+
+</footer>
+<!-- footer end -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript">
+    mybutton = document.getElementById("myBtn");
+
+    // when user scroll 20px form buttom
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+{% block js %}
+{% endblock %}
+</body>
+
+</html>

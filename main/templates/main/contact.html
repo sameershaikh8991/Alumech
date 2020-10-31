@@ -1,0 +1,51 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<title>{% block title %} Contact {% endblock %}</title>
+
+<head>
+    <link href="{% static 'css/contact.css' %}" rel="stylesheet">
+</head>
+<!-- contact statt -->
+{% if name %}
+<div class="thank" style="margin-top: 18%;margin-bottom: 50px;">
+<center>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="60" height="60"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM0 8a8 8 0 1116 0A8 8 0 010 8zm11.78-1.72a.75.75 0 00-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l4.5-4.5z"></path></svg>
+    <h2>Thank {{name}}</h2>
+    <p>We recevied your email and will respond shortly...</p>
+</center>
+<br><br><br>
+</div>
+{% else %}
+<section class="contactus" id="contactus">
+    <div class="container headings text-center">
+        <h1 class="text-center font-weight-bold">CONTACT US</h1>
+        <p class="text-capitalize pt-1">we are help us 😀</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-1">
+                <form method="post">{% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" style="height: 50px;" placeholder="Your name" id="email" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" style="height: 50px;" placeholder="Enter email" id="email" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="mobile" style="height: 50px;" placeholder="Enter Moblie number" id="mobile" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="7" name="message" placeholder="Your comment" id="comment" required autocomplete="off"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center form-button">
+                        <button class="btn btn-success" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact end -->
+{% endif %}
+{% endblock %}

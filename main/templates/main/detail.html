@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    {% for result in data %}
+    <div class="about_product" style="margin-top: 109px !important; margin-bottom: 20%;">
+        <h2 class="our_company">{{ result.head_name}}</h2>
+        <p>{{ result.desc}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

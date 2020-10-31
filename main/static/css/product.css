@@ -1,0 +1,246 @@
+/* service start */
+
+.mb-4 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #000;
+}
+
+.mb-4:after {
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 170px;
+    height: 1px;
+    background: red;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.page_content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+@media(min-width: 600px) {
+    .page_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 800px) {
+    .page_content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+@media(min-width: 600px) {
+    .card {
+        height: 350px;
+    }
+}
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: black;opacity: 2;
+
+}
+
+/* .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1050ms cubic-bezier(0.19, 1, 0.22, 1h);
+    pointer-events: none;
+}
+
+.card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-color: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgba(150, 201, 61, 61, 1));
+    transform: translateY(-50%);
+    transition: transform 1400ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform 1400ms cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+}
+
+
+
+.desc {
+    font-size: 0.65rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.card:after {
+    transform: translateY(0);
+}
+
+.content {
+    transform: translateY(calc(100% -4.5rem));
+}
+
+.content>*:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover {
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.card:hover::before {
+    transform: translateY(-4%);
+}
+
+
+.card:hover::after {
+    transform: translateY(-50%);
+}
+
+.card:hover .content {
+    transform: translateY(0);
+}
+
+.card:hover .content>*:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 85rem;
+} 
+*/
+
+.card {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(20px);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(to bottom,rgba(0,176,155,0.5),rgba(150,176,155,0.5));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.card .info h1{
+    margin: 0px;`
+}
+
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card:after{
+    transform: translateY(-20px);
+}
+
+.content>*:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity cubic-bezier(0.19, 1, 0.22, 1);
+}

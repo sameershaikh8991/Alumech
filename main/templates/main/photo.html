@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<title>{% block title %} Photos {% endblock %}</title>
+<link href="{% static 'css/photos.css' %}" rel="stylesheet">
+<div class="container">
+    <section class="gallery_area section_gap">
+        <div class="container_gallery">
+            <div class="section_title text-center">
+                <h2 class="title">Photos</h2>
+            </div>
+        </div>
+        <div class="row imageGallery1" id="gallery">
+            <div class="col-md-4 gallery_item">
+                <div class="gallery_image">
+                    <img src="{% static 'images/03.jpg' %}">
+                </div>
+            </div>
+            <div class="col-md-4 gallery_item">
+                <div class="gallery_image">
+                    <img src="{% static 'images/04.jpg' %}">
+                </div>
+            </div>
+            <div class="col-md-4 gallery_item">
+                <div class="gallery_image">
+                    <img src="{% static 'images/03-1.jpg' %}">
+                </div>
+            </div>
+            <div class="col-md-4 gallery_item">
+                <div class="gallery_image1" style="position: absolute; top: -118px;">
+                    <img src="{% static 'images/04.jpg' %}">
+                </div>
+            </div>
+            <div class="col-md-4 gallery_item">
+                <div class="gallery_image">
+                    <img src="{% static 'images/03.jpg' %}">
+                </div>
+            </div>
+            <div class="col-md-4 gallery_item">
+                <div class="gallery_image" style="position: absolute; top: -118px;">
+                    <img src="{% static 'images/06.jpg' %}">
+                </div>
+            </div>
+            <div class="col-md-4 gallery_item">
+                <div class="gallery_image">
+                    <img src="{% static 'images/05.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

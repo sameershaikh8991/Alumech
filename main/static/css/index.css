@@ -1,0 +1,13 @@
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover!important;
+}
+
+.col-md-5 img {
+    height: 374px !important;
+}
+
+h1.carousel_heading {
+    color: red !important;
+}

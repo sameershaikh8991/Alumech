@@ -1,0 +1,24 @@
+.about_product {
+    margin-top: 109px !important;
+    margin-bottom: 41px;
+}
+.about_product {
+    padding-top: 22px !important;
+}
+
+.about_product h2 {
+    padding-bottom: 12px;
+    padding-left: 40%;
+    padding-top: 0px;
+    font-weight: bold;
+
+}
+
+.about_product p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.mt-0 {
+  margin-top: 109px !important;
+}
